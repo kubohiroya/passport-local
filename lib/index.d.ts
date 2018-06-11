@@ -36,7 +36,7 @@ interface VerifyFunction {
 }
 
 declare class Strategy extends PassportStrategy {
-    constructor(options: IStrategyOptions_, verify: VerifyFunction);
+    constructor(options: IStrategyOptions, verify: VerifyFunction);
     constructor(options: IStrategyOptionsWithRequest, verify: VerifyFunctionWithRequest);
     constructor(verify: VerifyFunction);
 
